@@ -1,0 +1,87 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: #ffffff;
+}
+
+.viewport {
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.mockup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+    pointer-events: none;
+
+    background: url('../image/mockup.png');
+    background-size: cover;
+}
+
+.display-region {
+    position: absolute;
+    top: 0;
+    background: url("../image/background.png");
+    background-size: cover;
+}
+
+.display-container {
+    padding-top: 25%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+.display-container {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.col-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.panel {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 3.5% !important;
+    padding-right: 3.5% !important;
+}
+
+.panel-region {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 204, 204, 0.6);
+    border-radius: 15px;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.row-toggle {
+    margin-top: 4%;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+}
+
+.views {
+    display: none;
+}

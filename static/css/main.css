@@ -1,0 +1,83 @@
+.btn-toggle {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    background: #303030;
+    border-radius: 50%;
+
+    font-size: 1.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-toggle, .btn-toggle.disabled {
+    color: #cccccc;
+    background: #666666;
+}
+
+.btn-toggle.enabled {
+    color: #ffffff;
+    background: #61ABFF;
+}
+
+.sec-music-title:before {
+	content: '';
+	display: block;
+	height: 12.5%;
+}
+
+.sec-music-title {
+	color: #ffffff;
+	font-size: 1.1em;
+}
+
+.sec-music-artist {
+	color: #666666;
+	font-size: 0.9em;
+}
+
+.sec-music-playback {
+	margin: auto;
+	width: 75%;
+	color: #ffffff;
+	font-size: 1.4em;
+}
+
+.sec-slider {
+	position: relative;
+}
+
+.sec-slider-mark {
+	position: absolute;
+	color: #101010;
+	bottom: 10%;
+	font-size: 1.2em;
+	z-index: 500;
+}
+
+#view_main .sec-slider-cur {
+	z-index: 0;
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+
+	border-radius: 0px 0px 15px 15px;
+}
+
+#brg_slider {
+	height: 30%;
+}
+
+#vol_slider {
+	height: 55%;
+}
+
+#view_main .ui-slider-handle{
+    width: 0px !important;
+    height: 0px !important;
+    display: none;
+}
