@@ -67,8 +67,8 @@ function init() {
     bind_v_slider($("#brg_slider"));
     bind_v_slider($("#vol_slider"), 15);
 
-    bind_longclick($("#toggle_wifi"), function(){alert('wifi');});
-    bind_longclick($("#toggle_bt"), function(){alert('bt');});
+    bind_longclick($("#toggle_wifi"), change_to_wifi);
+    bind_longclick($("#toggle_bt"), change_to_bt);
     bind_longclick($("#panel_music"), change_to_music);
 
     bind_longclick($("#brg_whole_slider"), function(){alert('brg');});
@@ -78,14 +78,18 @@ function init() {
     $("#container").append(elem);
     view_main_update();
 
+    //change_to_bt();
+    //change_to_wifi();
     //change_to_music();
     $("#loader").remove();
 }
 
 function change_to_main(e)
 {
-    if ($(e.target).closest('#view_music').length)
+    if ($(e.target).closest('#view_music').length ||
+        $(e.target).closest("#view_wifi").length)
         return false;
+
     var elem=$("#container").children().first().detach();
     $(".views").append(elem);
 
@@ -105,7 +109,28 @@ function change_to_music()
     $("#container").append(elem);
 
     view_music_update();
+}
 
+function change_to_wifi()
+{
+    var elem=$("#container").children().first().detach();
+    $(".views").append(elem);
+
+    elem=$("#view_wifi").detach();
+    $("#container").append(elem);
+
+    view_wifi_update();
+}
+
+function change_to_bt()
+{
+    var elem=$("#container").children().first().detach();
+    $(".views").append(elem);
+
+    elem=$("#view_bt").detach();
+    $("#container").append(elem);
+
+    view_bt_update();
 }
 
 function view_main_update() {
@@ -116,11 +141,19 @@ function view_main_update() {
 
 function view_music_update() {
     /* music screen setting */
-    $("#view_music > .content-region").height($(".mockup").height() * 0.7);
+    $("#view_music .content-region").height($(".mockup").height() * 0.7);
     $(".music-cover-art").height($(".music-cover-art").width());    
 
 
     slider_width = $("#music_prog_whole_slider").width();
+}
+
+function view_wifi_update() {
+    $("#view_wifi .content-region").height($(".mockup").height() * 0.5);
+}
+
+function view_bt_update() {
+    $("#view_bt .content-region").height($(".mockup").height() * 0.5);
 }
 
 function music_play() {

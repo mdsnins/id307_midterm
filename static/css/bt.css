@@ -1,0 +1,47 @@
+#view_bt .content-region {
+    margin-top: 15%;
+}
+
+#view_bt .panel-region {
+    background-color: rgba(51, 51, 51, 0.7);
+}
+
+.top-icon {
+    font-size: 2rem;
+}
+
+.bt-list-region {
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow-y: auto;
+    height: 92%;
+}
+
+.bt-list-region::-webkit-scrollbar {
+    display: none;
+}
+
+.bt-list-element .row {
+    padding: 0;
+}
+
+.bt-list-element .col-10 {
+    padding-left: 0.6rem;
+}
+
+.bt-list-info {
+    right: 0.65rem;
+}
+
+.bt-list-seperator {
+    margin-top: -0.1rem;
+    margin-bottom: 0.6rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+.bt-paired {
+    color: rgba(51, 149, 255, 0.85); /* bootstrap text-primary */
+}

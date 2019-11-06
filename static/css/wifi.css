@@ -1,0 +1,47 @@
+#view_wifi .content-region {
+    margin-top: 15%;
+}
+
+#view_wifi .panel-region {
+    background-color: rgba(51, 51, 51, 0.7);
+}
+
+.top-icon {
+    font-size: 2rem;
+}
+
+.wifi-list-region {
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow-y: auto;
+    height: 92%;
+}
+
+.wifi-list-region::-webkit-scrollbar {
+    display: none;
+}
+
+.wifi-list-element .row {
+    padding: 0;
+}
+
+.wifi-list-element .col-8 {
+    padding-left: 0.6rem;
+}
+
+.wifi-list-intensity {
+    padding-left: 0.65rem;
+}
+
+.wifi-list-credential {
+    right: 0.65rem;
+}
+
+.wifi-list-seperator {
+    margin-top: -0.1rem;
+    margin-bottom: 0.6rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+    background-color: rgba(204, 204, 204, 0.5);
+}

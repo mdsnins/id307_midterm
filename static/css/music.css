@@ -101,6 +101,10 @@
     overflow-y: scroll;
 }
 
+.music-playlist-region::-webkit-scrollbar {
+    display: none;
+}
+
 .music-playlist-region p {
     margin-bottom: 3.2%;
 }
