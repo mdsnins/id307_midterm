@@ -14,6 +14,7 @@
     margin-left: 5%;
     margin-right: 5%;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     height: 92%;
 }
 
@@ -44,4 +45,12 @@
     margin-right: 2.5%;
     width: 95%;
     background-color: rgba(204, 204, 204, 0.5);
+}
+
+.wifi-connected {
+    color: rgba(51, 149, 255, 0.85); /* bootstrap text-primary */
+}
+
+.wifi-unknown {
+    color: rgba(204, 204, 204, 0.8);
 }
