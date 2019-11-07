@@ -78,7 +78,7 @@ function init() {
     $("#container").append(elem);
     view_main_update();
 
-    //change_to_bt();
+    change_to_bt();
     //change_to_wifi();
     //change_to_music();
     $("#loader").remove();
@@ -87,7 +87,8 @@ function init() {
 function change_to_main(e)
 {
     if ($(e.target).closest('#view_music').length ||
-        $(e.target).closest("#view_wifi").length)
+        $(e.target).closest("#view_wifi").length ||
+        $(e.target).closest("#view_bt").length)
         return false;
 
     var elem=$("#container").children().first().detach();
@@ -97,7 +98,6 @@ function change_to_main(e)
     $("#container").append(elem);
 
     view_main_update();
-
 }
 
 function change_to_music()
