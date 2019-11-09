@@ -58,6 +58,8 @@ function init() {
     $(".display-region").click(change_to_main);
 
     $(".btn-toggle").click(toggle);
+    $("#toggle_airplane").click(toggle_airplane);
+
     $("#view_main .playback-toggle").click(music_playback);
     $("#play").click(music_play);
 
@@ -78,9 +80,9 @@ function init() {
     $("#container").append(elem);
     view_main_update();
 
-    change_to_bt();
+    //change_to_bt();
     //change_to_wifi();
-    //change_to_music();
+    change_to_music();
     $("#loader").remove();
 }
 
@@ -107,6 +109,10 @@ function change_to_music()
 
     elem=$("#view_music").detach();
     $("#container").append(elem);
+    elem.addClass("popping")
+    setTimeout(function() {
+        elem.removeClass("popping")
+    }, 700);
 
     view_music_update();
 }
@@ -200,6 +206,19 @@ function music_playback() {
         title.text("Airplane");
     else
         title.text("하늘 위로");
+}
+
+function toggle_airplane() {
+    var t = $(this);
+    var span = $(t.children()[0]);
+
+    if(t.hasClass("enabled")) {
+        rotate(span, 0, -30, -1);
+    }
+    else {
+        rotate(span, -30, 0, 1);
+    }
+
 }
 
 function toggle() { 

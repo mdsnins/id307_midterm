@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
         <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/animate.css">
         <link rel="stylesheet" href="./static/css/grid.css">
         <link rel="stylesheet" href="./static/css/main.css">
         <link rel="stylesheet" href="./static/css/music.css">
@@ -58,12 +59,12 @@
                             <div class="panel-region">
                                 <div class="row row-toggle h-30">
                                     <div class="col-6">
-                                        <div class="btn-toggle">
+                                        <div id="toggle_airplane" class="btn-toggle">
                                             <span class="fa fa-plane" aria-hidden="true"></span>
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <div class="btn-toggle enabled">
+                                        <div id="toggle_cellular" class="btn-toggle enabled">
                                             <span class="fa fa-globe" aria-hidden="true"></span>
                                         </div>
                                     </div>
@@ -82,12 +83,12 @@
                                 </div>
                                 <div class="row row-toggle h-30">
                                     <div class="col-6">
-                                        <div class="btn-toggle">
+                                        <div id="toggle_airdrop" class="btn-toggle">
                                             <span class="fa fa-satellite-dish" aria-hidden="true"></span>
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <div class="btn-toggle">
+                                        <div id="toggle_hotspot" class="btn-toggle">
                                             <span class="fa fa-link" aria-hidden="true"></span>
                                         </div>
                                     </div>
@@ -148,7 +149,7 @@
             </div>
 
             <div id="view_music">
-                <div class="navbar-region row">
+                <!-- <div class="navbar-region row">
                     <div class="col-4">
                         <span class="fa fa-signal d-inline" aria-hidden="true"></span>
                         <p class="d-inline">KT</p>
@@ -162,7 +163,7 @@
                         <p class="d-inline">50%</p>
                         <span class="fa fa-battery-half d-inline" aria-hidden="true"></span>
                     </div>
-                </div>
+                </div> -->
                 <br />
                 <div class="content-region">
                     <div class="w-100 h-100 panel">
@@ -514,5 +515,6 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="./static/js/jquery.ui.touch-punch.min.js"></script>
         <script src="./static/js/loader.js"></script>
+        <script src="./static/js/animate.js"></script>
     </body>
 </html>
