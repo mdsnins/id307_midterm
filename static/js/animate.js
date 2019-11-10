@@ -14,3 +14,10 @@ function rotate(obj, rot_stt, rot_end, step=null, intv=6) {
 
 	rot_intv = setInterval(real_rotate, intv);
 }
+
+function pop_view(obj) {
+    obj.addClass("popping");
+    setTimeout(function() {
+        obj.removeClass("popping");
+    }, 700);
+}

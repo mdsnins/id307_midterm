@@ -82,7 +82,7 @@ function init() {
 
     //change_to_bt();
     //change_to_wifi();
-    change_to_music();
+    //change_to_music();
     $("#loader").remove();
 }
 
@@ -100,6 +100,7 @@ function change_to_main(e)
     $("#container").append(elem);
 
     view_main_update();
+    pop_view(elem);
 }
 
 function change_to_music()
@@ -109,12 +110,9 @@ function change_to_music()
 
     elem=$("#view_music").detach();
     $("#container").append(elem);
-    elem.addClass("popping")
-    setTimeout(function() {
-        elem.removeClass("popping")
-    }, 700);
-
+    
     view_music_update();
+    pop_view(elem);
 }
 
 function change_to_wifi()
@@ -126,6 +124,7 @@ function change_to_wifi()
     $("#container").append(elem);
 
     view_wifi_update();
+    pop_view(elem);
 }
 
 function change_to_bt()
@@ -137,6 +136,7 @@ function change_to_bt()
     $("#container").append(elem);
 
     view_bt_update();
+    pop_view(elem);
 }
 
 function view_main_update() {
