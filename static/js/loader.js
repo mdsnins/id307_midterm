@@ -100,7 +100,6 @@ function change_to_main(e)
     $("#container").append(elem);
 
     view_main_update();
-    pop_view(elem);
 }
 
 function change_to_music()
