@@ -98,7 +98,7 @@
     position: absolute;
     top: 55%;
     z-index: 500;
-    height: 40%;
+    height: 38%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }

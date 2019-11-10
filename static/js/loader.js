@@ -55,8 +55,8 @@ function init() {
     $(".display-region").width($(".mockup").width());
     $(".display-region").height($(".mockup").height());
 
+    $(".bt-btr").click(btr_switch);
     $(".display-region").click(change_to_main);
-
     $(".btn-toggle").click(toggle);
     $("#toggle_airplane").click(toggle_airplane);
 
@@ -231,6 +231,24 @@ function toggle() {
         if(t.hasClass("disabled"))
             t.removeClass("disabled");
         t.addClass("enabled");
+    }
+}
+
+function btr_switch() {
+    var t = $(this);
+    console.log(t);
+
+    if(t.hasClass("bt-btr-preview")) {
+        t.removeClass("bt-btr-preview");
+        t.addClass("bt-btr-percent");
+
+        t.attr("src", "./static/image/btr-percent.png");
+    }
+    else {
+        t.removeClass("bt-btr-percent");
+        t.addClass("bt-btr-preview");
+
+        t.attr("src", "./static/image/btr-preview.png");
     }
 }
 

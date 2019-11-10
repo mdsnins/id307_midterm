@@ -27,6 +27,7 @@
 
 .bt-list-element .col-10 {
     padding-left: 0.8rem;
+    font-size: 0.8em;
 }
 
 .bt-list-info {
@@ -44,7 +45,7 @@
 }
 
 .bt-paired {
-    color: rgba(51, 149, 255, 0.85); /* bootstrap text-primary */
+    color: #61ABFF; /* bootstrap text-primary */
 }
 
 .align-middle span {
@@ -57,14 +58,14 @@
     padding-right: 0;
 }
 
-.bt-list-battery {
-    position: relative;
-    color: #ffffff;
-    top: -0.5rem;
-    font-size: 0.8rem;
+.bt-list-info img {
+    width: 100%;
 }
 
-.battery-r {
-    position: relative;
-    top: -0.7rem;
+.bt-icon {
+    max-width: 50% !important;
+}
+
+.bt-unknown {
+    color: #888888;
 }
