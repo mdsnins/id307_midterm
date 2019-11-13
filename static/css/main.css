@@ -81,3 +81,16 @@
     height: 0px !important;
     display: none;
 }
+
+
+.panel-icon {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    font-size: 1.75em;
+    color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

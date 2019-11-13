@@ -66,6 +66,7 @@ function init() {
 
     /* slider */
     bind_slider($("#music_prog_slider"), 33, sample_music_slider);
+    bind_slider($("#music_vol_slider"), 55); 
     bind_v_slider($("#brg_slider"));
     bind_v_slider($("#vol_slider"), 15);
 

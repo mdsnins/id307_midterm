@@ -34,14 +34,27 @@
 
 .music-playback {
     margin-left: 20%;
+    margin-top: 6%;
     width: 60%;
     font-size: 1.7em;
 }
 
 .music-prog-slider-region {
     position: relative;
+    margin-top: -5%;
     margin-left: 10%;
     width:80%;
+}
+
+.music-vol-slider-region {
+    position: relative;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.music-vol-slider-region span {
+    font-size: 0.9rem;
+    color: #cccccc;
 }
 
 .music-prog-text {
@@ -63,7 +76,6 @@
     height: 5px;
     background :#666666;
 }
-
 #music_prog_slider_handle{
     width: 0px !important;
     height: 0px !important;
@@ -72,6 +84,31 @@
 
 
 #music_prog_whole_slider > * {
+    height: 100% !important;
+}
+
+#music_vol_slider {
+    position: relative;
+}
+
+#music_vol_whole_slider {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 3px;
+    background :#666666;
+
+    position: relative;
+    top: 4.5px;
+}
+
+#music_vol_slider_handle{
+    width: 0px !important;
+    height: 0px !important;
+    display: none;
+}
+
+
+#music_vol_whole_slider > * {
     height: 100% !important;
 }
 
